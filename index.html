@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>My Website</title>
+        <script>
+            function submitForm() {
+                const name = document.getElementById("name").value;
+                const password = document.getElementById("password").value;
+                const email = document.getElementById("email").value;
+                const age = document.getElementById("age").value;
+                const date = document.getElementById("date").value;
+                console.log(name, password, email, age, date);
+                document.getElementById("message").innerHTML = "Form submitted successfully";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <p>This is a simple website built with HTML.</p>
+        <a href="https://www.google.com">Google</a>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <button>Click me</button>
+        <input id="name" type="text" placeholder="Enter your name">
+        <input id="password" type="password" placeholder="Enter your password">
+        <input id="email" type="email" placeholder="Enter your email">
+        <input id="age" type="number" placeholder="Enter your age">
+        <input id="date" type="date" placeholder="Enter your date of birth">
+        <button id="submit" onclick="submitForm()">Submit</button>
+        <p id="message"></p>
+    </body>
+</html>
